@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var alunoA = [10, 4, 7, 9]
+        var alunoB = [9, 8, 1, 2]
+        var alunoC = [6, 10, 5, 9]
+        var soma = 0
+        var media = []
+        var qtd = 0
+
+        for (posicao in alunoA){
+            soma += alunoA[posicao]
+        }
+        media.push(soma/alunoA.length)
+
+        soma = 0
+        for (posicao in alunoB){
+            soma += alunoB[posicao]
+        }
+        media.push(soma/alunoB.length)
+        soma = 0
+        for (posicao in alunoC){
+            soma += alunoC[posicao]
+        }
+        media.push(soma/alunoC.length)
+     
+        for (posicao in media){
+            if (media[posicao] >=7)
+            qtd += 1 
+    }
+    alert(qtd + " alunos acima da média")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

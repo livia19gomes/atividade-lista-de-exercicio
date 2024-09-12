@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var letra = ["m", "l", "v", "j", "p", "e", "s", "a", "i", "o"]
+        var vogais = ["a", "e", "i", "o", "u"]
+        var consoantes = []
+
+        for (posicao in letra){ 
+            if (vogais.includes(letra[posicao]) == false) {
+                consoantes.push(letra[posicao])
+            }
+        }
+
+        alert("Consoantes: " + consoantes)
+        alert("Quantidade: " + consoantes.length)
+
+    </script>
+</head>S
+<body>
+    
+</body>
+</html>
